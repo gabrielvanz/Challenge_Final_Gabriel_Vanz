@@ -1,0 +1,14 @@
+valid_product: 'DRESSES'
+user_for_register:
+  email: 'teste@compass.com.br'
+  name: 'João'
+  lastname: 'Luiz'
+  password: '12345678'
+  address: 'Rua 7 de Abril'
+  city: 'São Paulo'
+  state: '--'
+  postal_code: '000000'
+  country: '--'
+  telephone: '0123456789'
+
+
