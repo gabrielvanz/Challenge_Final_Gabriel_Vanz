@@ -2,9 +2,9 @@ require_relative '../sections/register'
 
 module Pages
     class Authentication_register < SitePrism::Page
-        set_url ''
+        set_url '/index.php?controller=authentication&back=my-account#account-creation'
 
-        section :register, Sections::Register, '#create-account_form'
+        section :register, Sections::Register, '#authentication'
 
         def set_email_adress(email)
             register.input_email.set email
@@ -17,11 +17,9 @@ module Pages
            register.password.set password
            register.address.set address
            register.city.set city
-           #->register.state
+           register.state[2].click
            register.postal_code.set post_code
-           #->register.country
-           register.phone_mobile.set telephone
-           #register.btn_register.click
+           register.telephone.set telephone
         end
     end
 end
