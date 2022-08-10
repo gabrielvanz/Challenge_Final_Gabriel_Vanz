@@ -1,6 +1,6 @@
 valid_product: 'DRESSES'
 user_for_register:
-  email: 'teste@222compass.com.br'
+  email: 'teste@compass.com.br'
   name: 'João'
   lastname: 'Luiz'
   password: '12345678'
@@ -10,5 +10,9 @@ user_for_register:
   postal_code: '00000'
   country: '--'
   telephone: '0123456789'
+
+user_for_login:
+  email: 'teste@compass.com.br'
+  password: '12345678'
 
 

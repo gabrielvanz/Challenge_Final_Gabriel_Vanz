@@ -5,7 +5,6 @@ module Factory
         def self.user_for_registering
             {
                 email: Faker::Internet.email,
-                message: Faker::Lorem.unique
             }
         end
     end

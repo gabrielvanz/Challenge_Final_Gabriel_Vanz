@@ -1,16 +1,17 @@
 require_relative '../sections/register'
+require_relative '../sections/login'
 
 module Pages
-    class Authentication_register < SitePrism::Page
+    class Authentication < SitePrism::Page
         set_url '/index.php?controller=authentication&back=my-account#account-creation'
-
+    
         section :register, Sections::Register, '#authentication'
-
+    
         def set_email_adress(email)
             register.input_email.set email
             register.btn_create_account.click
         end
-
+    
         def set_field_entries(name,lastname,password,address,city,post_code,telephone)
            register.name.set name
            register.lastname.set lastname
@@ -21,5 +22,15 @@ module Pages
            register.postal_code.set post_code
            register.telephone.set telephone
         end
+        
+    
+        section :login, Sections::Login, 'body'
+           
+        def set_user_configs(email,password)
+            login.input_email.set email
+            login.input_password.set password
+            login.btn_login.click
+        end
+
     end
 end
