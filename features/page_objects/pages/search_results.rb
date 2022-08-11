@@ -6,11 +6,14 @@ module Pages
         set_url ''
 
         section :header, Sections::Header, 'header#header'
-        # elements :products, 'div .product-container'
         sections :products, Sections::Products, 'div .product-container'
 
         def access_products_page(index)
             products[index].name.click
+        end
+
+        def access_products_modal(index)
+            products[index].quickView.click
         end
     end
 end

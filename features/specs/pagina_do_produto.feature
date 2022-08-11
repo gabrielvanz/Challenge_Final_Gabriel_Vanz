@@ -3,7 +3,7 @@
 @regression
 @pdp
 Funcionalidade: Página do Produto
-    SENDO um usuário do Ecommerce ---
+    SENDO um usuário do Ecommerce Automation Pratice 
     QUERO poder personalizar os produtos que irei comprar na página do produto
     PARA ter uma melhor experiência de compra
 
@@ -15,18 +15,22 @@ Cenário: Trocar a cor do produto na PDP
     Quando alterar a cor do produto
     Então deverá alterar a imagem apresentada na PDP
 
-@increase_product_quantity
-@increase_product_quantity_only_pdp
+@product_quantity_pdd
+@increase_product_quantity_pdd
 Cenário: Aumentar a quantidade do produto na PDD
     Quando aumentar a quantidade do produto
-    Então deverá alterar a quantidade exibida na PDP
+    Então deverá alterar a quantidade exibida na PDP para "2"
 
-@increase_product_quantity
-@increase_product_quantity_validade_cart
-Cenário: Aumentar a quantidade do produto na PDP no carrinho
-    Quando aumentar a quantidade do produto
-    E adicionar produto ao carrinho
-    Então o produto deverá ser adicionado com a quantidade aumentada
+@product_quantity_pdd
+@decrease_product_quantity_pdd
+Cenário: Diminuir a quantidade do produto na PDD
+    Quando diminuir a quantidade do produto
+    Então deverá alterar a quantidade exibida na PDP para "1"
+
+@change_size_pdp
+Cenário: Trocar o tamanho do produto na PDP
+    Quando alterar o tamanho do produto
+    Então deverá alterar o tamanho exibido na PDP
 
 @add_product_to_cart_pdp
 Cenário: Adicionar produto ao carrinho pela PDD

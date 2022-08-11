@@ -25,6 +25,3 @@ Esquema do Cenário: Buscar por produtos existentes
     |Blouses           |
     |Dresses           |
     |T-shirts          |
-#Primeira execução = Women
-#Segunda execução = Dresses
-#...

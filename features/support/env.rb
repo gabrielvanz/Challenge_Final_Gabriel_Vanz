@@ -16,7 +16,7 @@ Capybara.register_driver :my_chrome do |app|
     caps = Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" =>
         {"args" => ["--ignore-ssl-errors","--ignore-certificate-errors","--disable-popup-blocking",
             "--disable-gpu","--disable-translate","--incognito","--no-sandbox","--acceptInsecureCerts=true",
-            "--start-maximized", "--windows-size=1420,835", "--disable-impl-size-painting", "--debug_level=3"]})
+            "--windows-size=1120,835", "--disable-impl-size-painting", "--debug_level=3"]})
     if ENV['HEADLESS']
         caps['goog:chromeOptions']['args'] << '--headless'
         caps['goog:chromeOptions']['args'] << '--disable-site-isolation-trials'
