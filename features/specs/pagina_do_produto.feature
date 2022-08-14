@@ -15,15 +15,15 @@ Cenário: Trocar a cor do produto na PDP
     Quando alterar a cor do produto
     Então deverá alterar a imagem apresentada na PDP
 
-@product_quantity_pdd
-@increase_product_quantity_pdd
-Cenário: Aumentar a quantidade do produto na PDD
+@product_quantity_pdp
+@increase_product_quantity_pdp
+Cenário: Aumentar a quantidade do produto na PDP
     Quando aumentar a quantidade do produto
     Então deverá alterar a quantidade exibida na PDP para "2"
 
-@product_quantity_pdd
-@decrease_product_quantity_pdd
-Cenário: Diminuir a quantidade do produto na PDD
+@product_quantity_pdp
+@decrease_product_quantity_pdp
+Cenário: Diminuir a quantidade do produto na PDP
     Quando diminuir a quantidade do produto
     Então deverá alterar a quantidade exibida na PDP para "1"
 
@@ -33,6 +33,6 @@ Cenário: Trocar o tamanho do produto na PDP
     Então deverá alterar o tamanho exibido na PDP
 
 @add_product_to_cart_pdp
-Cenário: Adicionar produto ao carrinho pela PDD
+Cenário: Adicionar produto ao carrinho pela PDP
     Quando adicionar o produto ao carrinho
     Então o produto deverá ser adicionado ao carrinho com sucesso

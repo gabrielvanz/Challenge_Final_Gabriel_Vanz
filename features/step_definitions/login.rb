@@ -14,12 +14,7 @@ end
 Quando('realizar login com {string} e {string}') do |email, password|                              
     @authentication_page = Pages::Authentication.new
     @authentication_page.set_user_configs(email,password)
-end                                                                            
-                                                                                
-# Então('deverá logar o usuário') do      
-#     @my_account = Pages::My_account.new                                                       
-#     expect(@my_account).to have_myAccount
-# end          
+end                                                                                 
 
 Então('deverá retornar a {string}') do |msg|
     @msg_allert = @authentication_page.login

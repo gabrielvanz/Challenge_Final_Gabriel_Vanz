@@ -1,5 +1,5 @@
 valid_product: 'DRESSES'
-user_for_register:
+user_for_registration:
   email: 'teste@compass.com.br'
   name: 'João'
   lastname: 'Luiz'
