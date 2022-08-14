@@ -13,6 +13,6 @@ Funcionalidade: Checkout via carrinho
 
     Cenário: 
         Quando fazer checkout do produto pelo carrinho
-        E adicionar incremento do produto no carrinho
-        E adicionar endereço no checkout
+        E o termo de serviço estiver marcado
+        E selecionar o meio de pagamento
         Então deverá finalizar o checkout com sucesso
