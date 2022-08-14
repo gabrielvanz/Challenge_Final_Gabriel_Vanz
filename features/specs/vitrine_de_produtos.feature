@@ -11,7 +11,7 @@ Funcionalidade: Vitrine de Produtos
     Contexto: Estar na vitrine dos produtos
     Dado que esteja na vitrine de produtos
 
-    @add_product_to_cart_showcase
+    @product_showcase_add_to_cart
     Cenário: Adicionar produto da vitrine ao carrinho
         Quando adicionar produto da vitrine ao carrinho
         Então o produto deverá ser adicionado ao carrinho com sucesso pela vitrine

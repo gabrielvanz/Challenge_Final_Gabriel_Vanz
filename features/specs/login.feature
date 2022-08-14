@@ -10,12 +10,12 @@ Funcionalidade: Login via E-mail
     Contexto:
         Dado que esteja na página de autenticação
 
-    @login_teste
+    @login_validate_only
     Cenário: Validar login do usuário
         Quando realizar login com email e senha válidos
         Então  deverá logar o usuário
 
-    @login_scheme
+    @login_validate
     Esquema do Cenário: Validar login do usuário
         Quando realizar login com "<email>" e "<password>"
         Então deverá retornar a "<msg>" 
