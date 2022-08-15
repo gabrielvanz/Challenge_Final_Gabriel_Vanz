@@ -128,7 +128,7 @@ cucumber -p default -t"nome"
 
 3- Pressione **Enter** para executar a automação
 
-<a href="#topo"><h5>Clicando aqui, voce verá o `nome` de todas as automações possíveis.</h5></a>
+<a href="#topo"><h5>Clicando aqui, voce verá o `nome` de todas as automações existentes</h5></a>
 
 > Para executar todos os cenários de uma automação, o **nome** deverá conter a automação requisitada, como abaixo<br>
 > ```cucumber -p default -t@search```<br>
@@ -141,7 +141,7 @@ cucumber -p default -t"nome"
 
 <h2>Agradecimentos</h2>
 
-<p>Queria agradecer aos colegas Bruno Silveira, Leonardo Moresco e Rhodrigo Lopes do programa de bolsas de Automação Web, que me ajudaram no desenvolvimento desse projeto.
+<p>Queria agradecer aos colegas Bruno Silveira, Leonardo Moresco e Rhodrigo Lopes do programa de bolsas de Automação Web, que me ajudaram no desenvolvimento desse projeto.</p>
   
 <br>
 

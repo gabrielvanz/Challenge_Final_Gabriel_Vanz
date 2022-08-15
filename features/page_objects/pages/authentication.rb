@@ -32,5 +32,9 @@ module Pages
             login.btn_login.click
         end
 
+        def forgot_pass(email)
+            login.input_email_retrieve_password.set email
+            login.btn_retrieve_password.click
+        end
     end
 end
