@@ -17,4 +17,4 @@ end
 Quando('buscar pelo produto {string}') do |product|
     @home_page.search_for(product)
     @search_results_page = Pages::SearchResults.new
-  end
+end

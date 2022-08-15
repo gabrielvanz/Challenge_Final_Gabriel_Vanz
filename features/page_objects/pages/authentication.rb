@@ -4,7 +4,8 @@ require_relative '../sections/login'
 module Pages
     class Authentication < SitePrism::Page
         set_url '/index.php?controller=authentication&back=my-account#account-creation'
-    
+        
+        # Registration
         section :registration, Sections::Registration, '#authentication'
     
         def set_email_adress(email)
@@ -23,7 +24,7 @@ module Pages
            registration.telephone.set telephone
         end
         
-    
+        # Login
         section :login, Sections::Login, 'body'
            
         def set_user_configs(email,password)

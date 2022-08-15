@@ -8,7 +8,7 @@
 
 <h3 name="topo">Automações dos testes</h3>
 
->As automações dos testes do fluxo de compra, são elas a busca, cadastro, login, finalização da compra, página do produto e vitrine de produtos, que estão listadas abaixo.
+>As automações dos testes do fluxo de compra, são elas a busca, cadastro, login, finalização da compra, página do produto, vitrine de produtos e o carrinho, que estão listadas abaixo.
 
 ```bash
 @search
@@ -33,6 +33,12 @@
 
 @product_showcase
   -> @product_showcase_add_to_cart
+
+@cart
+  -> @cart_increase_product_quantity
+  -> @cart_decrease_product_quantity
+  -> @cart_remove_product
+  -> @cart_remove_product_modal
 
 @checkout
 ```

@@ -11,7 +11,6 @@ Então('deverá alterar a quantidade exibida no carrinho para {string}') do |str
     expect(@cart_page.cart_quantity_products_cartPage.value).to eql "2"
 end
 
-
 Quando('diminuir a quantidade do produto no carrinho') do
     sleep 1.5
     @cart_page = Pages::Cart.new
@@ -25,7 +24,6 @@ Então('deverá remover o produto do carrinho') do
     expect(@cart_page).not_to have_cart_item
 end
 
-
 Quando('clicar na lixeira de um produto existente no carrinho') do
     sleep 1.5
     @cart_page = Pages::Cart.new
@@ -37,7 +35,6 @@ end
 Então('deverá remover o produto do carrinho na página do carrinho') do
     expect(@cart_page).not_to have_cart_item
 end
-
 
 Quando('clicar na lixeira de um produto existente no carrinho no modal do carrinho') do
     sleep 1.5
